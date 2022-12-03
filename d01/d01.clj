@@ -4,7 +4,7 @@
     ;; [clojure.edn :as edn]))
 
 (defn total-calories-for-each-elf []
-  (let [data (slurp "./data.txt")]
+  (let [data (slurp "./d01/data.txt")]
     (->> (str/split data #"\n\n")
          (map (fn[x]
                 (->> (str/split x #"\n") ;; each elf split by \n

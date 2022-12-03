@@ -3,7 +3,7 @@
     [clojure.string :as str]))
 
 (defn get-rounds []
-  (str/split (slurp "./data.txt") #"\n"))
+  (str/split (slurp "./d02/data.txt") #"\n"))
 
 (def score
   {"AA" (+ 3 1)
